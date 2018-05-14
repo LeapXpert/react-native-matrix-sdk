@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FA2A28355F12E7739A86E6C /* Pods_RNMatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E49221315EDDF143EB96896 /* Pods_RNMatrixSDK.framework */; };
 		B68749B420A551CB008E9AE1 /* RNMatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */; };
 		B6FBD27820A949A500DCF384 /* RNMatrixSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBD27720A949A500DCF384 /* RNMatrixSDK.m */; };
 /* End PBXBuildFile section */
@@ -26,9 +25,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNMatrixSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNMatrixSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E49221315EDDF143EB96896 /* Pods_RNMatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNMatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F4D80DFB3B2458DB291A8FB /* Pods-RNMatrixSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMatrixSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNMatrixSDK/Pods-RNMatrixSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		5AAFE5F85D3990FEF5869DCA /* Pods-RNMatrixSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMatrixSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNMatrixSDK/Pods-RNMatrixSDK.release.xcconfig"; sourceTree = "<group>"; };
 		B68749B220A551CA008E9AE1 /* RNMatrixSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNMatrixSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMatrixSDK.swift; sourceTree = "<group>"; };
 		B6FBD27720A949A500DCF384 /* RNMatrixSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMatrixSDK.m; sourceTree = "<group>"; };
@@ -39,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA2A28355F12E7739A86E6C /* Pods_RNMatrixSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +49,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BF2098ADD93FAEBCD5C7FF0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2E49221315EDDF143EB96896 /* Pods_RNMatrixSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
@@ -69,18 +56,7 @@
 				B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				B68749B220A551CA008E9AE1 /* RNMatrixSDK-Bridging-Header.h */,
-				A6B165F280CE81F79BBC078F /* Pods */,
-				4BF2098ADD93FAEBCD5C7FF0 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		A6B165F280CE81F79BBC078F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3F4D80DFB3B2458DB291A8FB /* Pods-RNMatrixSDK.debug.xcconfig */,
-				5AAFE5F85D3990FEF5869DCA /* Pods-RNMatrixSDK.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,11 +66,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNMatrixSDK" */;
 			buildPhases = (
-				4E9FBBFE535AC197B0AE760D /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
-				9B48DF13E02654A4DF7FA6B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,42 +110,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4E9FBBFE535AC197B0AE760D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNMatrixSDK-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B48DF13E02654A4DF7FA6B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNMatrixSDK/Pods-RNMatrixSDK-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -269,7 +207,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F4D80DFB3B2458DB291A8FB /* Pods-RNMatrixSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -291,7 +228,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AAFE5F85D3990FEF5869DCA /* Pods-RNMatrixSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
