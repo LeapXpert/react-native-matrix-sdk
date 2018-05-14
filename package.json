@@ -6,10 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react-native"],
+  "keywords": [
+    "react-native"
+  ],
   "author": "",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.12.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^6.5.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "0.67",
+    "prettier": "^1.11.1"
   }
 }

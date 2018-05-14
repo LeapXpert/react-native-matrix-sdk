@@ -1,6 +1,6 @@
+// @flow
+import {NativeModules} from 'react-native'
 
-import { NativeModules } from 'react-native';
+const {RNMatrixSDK} = NativeModules
 
-const { RNMatrixSDK } = NativeModules;
-
-export default RNMatrixSDK;
+export default RNMatrixSDK
