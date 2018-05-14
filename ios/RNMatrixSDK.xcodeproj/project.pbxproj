@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6FA2A28355F12E7739A86E6C /* Pods_RNMatrixSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E49221315EDDF143EB96896 /* Pods_RNMatrixSDK.framework */; };
 		B68749B420A551CB008E9AE1 /* RNMatrixSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */; };
+		B6FBD27820A949A500DCF384 /* RNMatrixSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBD27720A949A500DCF384 /* RNMatrixSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +29,9 @@
 		2E49221315EDDF143EB96896 /* Pods_RNMatrixSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNMatrixSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4D80DFB3B2458DB291A8FB /* Pods-RNMatrixSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMatrixSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNMatrixSDK/Pods-RNMatrixSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		5AAFE5F85D3990FEF5869DCA /* Pods-RNMatrixSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNMatrixSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNMatrixSDK/Pods-RNMatrixSDK.release.xcconfig"; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* RNMatrixSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNMatrixSDK.h; sourceTree = "<group>"; };
 		B68749B220A551CA008E9AE1 /* RNMatrixSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNMatrixSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMatrixSDK.swift; sourceTree = "<group>"; };
+		B6FBD27720A949A500DCF384 /* RNMatrixSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMatrixSDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +65,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				B6FBD27720A949A500DCF384 /* RNMatrixSDK.m */,
 				B68749B320A551CA008E9AE1 /* RNMatrixSDK.swift */,
-				B3E7B5881CC2AC0600A0062D /* RNMatrixSDK.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				B68749B220A551CA008E9AE1 /* RNMatrixSDK-Bridging-Header.h */,
 				A6B165F280CE81F79BBC078F /* Pods */,
@@ -178,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68749B420A551CB008E9AE1 /* RNMatrixSDK.swift in Sources */,
+				B6FBD27820A949A500DCF384 /* RNMatrixSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

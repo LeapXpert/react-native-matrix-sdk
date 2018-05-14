@@ -5,11 +5,11 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNMatrixSDK : NSObject <RCTBridgeModule>
+@interface RCT_EXTERN_MODULE(RNMatrixSDK, NSObject)
 
 + (BOOL)requiresMainQueueSetup
 {
-  return false;
+    return false;
 }
 
 RCT_EXTERN_METHOD(supportedEvents)
