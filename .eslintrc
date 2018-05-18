@@ -12,15 +12,21 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:flowtype/recommended",
     "plugin:react-native/all",
+    "prettier/flowtype",
     "prettier/react"
   ],
-  "plugins": ["babel", "react", "react-native", "prettier"],
+  "plugins": ["babel", "react", "react-native", "flowtype", "prettier"],
   "rules": {
     "no-console": 0,
-    "no-extra-semi": "error",
-    "array-bracket-spacing": ["error", "never"],
-    "object-curly-spacing": ["error", "never"],
+    "react/prop-types": 0,
+    "flowtype/semi": ["error", "never"],
+    "flowtype/space-after-type-colon": ["error", "always"],
+    "flowtype/space-before-type-colon": ["error", "never"],
+    "flowtype/generic-spacing": ["error", "never"],
+    "flowtype/no-primitive-constructor-types": 2,
+    "flowtype/no-dupe-keys": 2,
     "prettier/prettier": "error"
   }
 }
