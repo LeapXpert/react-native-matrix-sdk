@@ -26,5 +26,8 @@
     "eslint-plugin-react-native": "^3.2.1",
     "flow-bin": "0.67",
     "prettier": "^1.11.1"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4"
   }
 }

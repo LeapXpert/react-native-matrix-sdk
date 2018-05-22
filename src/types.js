@@ -17,15 +17,16 @@ export type MatrixUser = {
 export type MatrixRoom = {
   highlight_count: number,
   is_direct: boolean,
-  last_message: MatrixEvent<*>,
+  last_message: MatrixEvent,
   room_id: string,
   name: ?string
 }
 
-export type MatrixEvent<T> = {
+export type MatrixEvent = {
   age: number,
   created_at: number,
-  content: T & {
+  content: {
+    [key: string]: any,
     msgtype: string,
     body: string
   },
@@ -34,3 +35,9 @@ export type MatrixEvent<T> = {
   room_id: string,
   sender_id: string
 }
+
+export type MatrixRoomListener = (event: MatrixEvent) => void
+export type MatrixRoomListenerRemover = {remove: () => void}
+export type Direction = 'backwards' | 'forwards'
+export type Timestamp = Date | number | string
+export type MatrixEventSection = {data: Array<MatrixEvent>, key: number}
