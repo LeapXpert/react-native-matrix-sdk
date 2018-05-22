@@ -78,7 +78,7 @@ class RoomEventTimeline {
 
   // Load {perPage} message in a room. Enumerate the events to the attached listeners
   // Assuming each message comes after each other 250ms. Return promise but no need async/await
-  async loadMessages(
+  async backwards(
     options: {perPage?: number, initial?: boolean} = {}
   ): Promise<Array<MatrixEvent>> {
     const {perPage = 15, initial = false} = options

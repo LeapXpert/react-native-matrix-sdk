@@ -6,7 +6,7 @@ import type {MatrixCredentials, MatrixUser, MatrixRoom} from './types'
 
 type ConnectOptions = {autoJoinInvitedRoom?: boolean}
 
-class Matrix {
+class MatrixSession {
   login(
     url: string,
     username: string,
@@ -42,4 +42,4 @@ class Matrix {
   }
 }
 
-export default new Matrix()
+export default new MatrixSession()
